@@ -1,6 +1,19 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
+/* Mine */
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 10rem 3rem 10rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
 /*
 	Story by HTML5 UP
 	html5up.net | @ajlkn
@@ -140,6 +153,11 @@ input, select, textarea {
 			html {
 				font-size: 11pt;
 			}
+
+
+      .videoContainer {
+        padding: 0rem 0rem 3rem 0rem;
+      }
 
 		}
 
