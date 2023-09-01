@@ -14,6 +14,17 @@ video {
   max-height: 100%;
 }
 
+.yt {
+  width: 100%;
+  max-width: 960px;
+}
+
+@media screen and (max-width: 736px) {
+  .yt {
+    max-height: 330px;
+  }
+}
+
 /*
 	Story by HTML5 UP
 	html5up.net | @ajlkn
