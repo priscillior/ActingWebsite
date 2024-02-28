@@ -20,9 +20,24 @@ video {
   margin-bottom: 3rem;
 }
 
+.button.selected {
+  box-shadow: inset 0 0 0 1px #47D3E5;
+  color: #47D3E5 !important;
+}
+
+.commercialsContainer {
+  display: inline-flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 736px) {
   .yt {
     max-height: 330px;
+  }
+
+  .commercialsContainer {
+    display: block;
+    justify-content: center;
   }
 }
 

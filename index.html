@@ -107,13 +107,35 @@
           <div class="inner">
             <h2>Commercial</h2>
           </div>
+          <script>
+            function toggleContent(contentId) {
+              document.getElementById('15secCommercial').style.display = 'none';
+              document.getElementById('30secCommercial').style.display = 'none';
+
+              document.getElementById('15sec').classList.remove('selected');
+              document.getElementById('30sec').classList.remove('selected');
+
+              // Toggle display for the selected content and mark the button as selected
+              document.getElementById(contentId).style.display = 'block';
+              document.getElementById(contentId.slice(0, -9)).classList.toggle('selected');
+            }
+          </script>
           <div class="content">
-            <div class="videoContainer">
+            <div id="15secCommercial" class="videoContainer">
               <video width="960" height="540" controls>
                 <source src="videos/rybelsus15reduced.mp4" type="video/mp4">
               </video>
             </div>
+            <div id="30secCommercial" class="videoContainer" style="display: none;">
+              <video width="960" height="540" controls>
+                <source src="videos/rybelsus30reduced.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
+          <ul class="commercialsContainer">
+            <li><a id="15sec" onclick="toggleContent('15secCommercial')" class="button big wide selected">15 Second Commercial</a></li>
+            <li><a id="30sec" onclick="toggleContent('30secCommercial')" class="button big wide">30 Second Commercial</a></li>
+          </ul>
         </section>
 
         <!-- Four -->
