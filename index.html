@@ -116,8 +116,13 @@
               document.getElementById('30sec').classList.remove('selected');
 
               // Toggle display for the selected content and mark the button as selected
-              document.getElementById(contentId).style.display = 'block';
-              document.getElementById(contentId.slice(0, -9)).classList.toggle('selected');
+              if (contentId === '15secCommercial') {
+                document.getElementById('15secCommercial').style.display = 'block';
+                document.getElementById('15sec').classList.add('selected');
+              } else {
+                document.getElementById('30secCommercial').style.display = 'block';
+                document.getElementById('30sec').classList.add('selected');
+              }
             }
           </script>
           <div class="content">
